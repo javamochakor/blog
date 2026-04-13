@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>(주) 정민산업 – 행거 · 분전함 제조 전문 공장</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="행거(파이프라인), 분전함, 프레스 · 방전기 정밀 가공 전문 정민산업" />
+  <style>
+    :root {
+      --primary: #f9a826;
+      --primary-dark: #d88710;
+      --dark: #111827;
+      --dark-soft: #1f2933;
+      --gray: #6b7280;
+      --light-bg: #f3f4f6;
+      --max-width: 1200px;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="images/jmco_ci.png" alt="정민산업 로고" class="logo-img">
+        <span class="logo-text">(주) 정민산업</span>
+      </div>
+      <nav>
+        <a href="#about">회사소개</a>
+        <a href="#equipment">생산설비</a>
+        <a href="#products">제품소개</a>
+        <a href="#process">생산공정</a>
+        <button class="nav-cta" onclick="scrollToSection('contact')">견적 / 문의</button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span>
+      </button>
+    </div>
+    <div class="container nav-mobile" id="navMobile">
+      <a href="#about" onclick="closeMobileNav()">회사소개</a>
+      <a href="#equipment" onclick="closeMobileNav()">생산설비</a>
+      <a href="#products" onclick="closeMobileNav()">제품소개</a>
+      <a href="#process" onclick="closeMobileNav()">생산공정</a>
+      <button class="nav-cta" onclick="scrollToSection('contact'); closeMobileNav();">견적 / 문의</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-kicker">PRESS · EDM · METAL FABRICATION</div>
+          <h1 class="hero-title">
+            행거 · 분전함<br />
+            <span>정밀 금속 가공</span> 전문 공장
+          </h1>
+          <p class="hero-sub">
+            프레스 및 방전기(EDM)를 기반으로 파이프라인 행거, 분전함 등
+            산업용 금속 부품을 설계부터 양산까지 책임 생산합니다.
+          </p>
+          <div class="hero-badges">
+            <div class="badge"><span class="badge-dot"></span> 소량·다품종 대응</div>
+            <div class="badge"><span class="badge-dot"></span> 도면·샘플 제작 가능</div>
+            <div class="badge"><span class="badge-dot"></span> 납기·품질 관리 시스템</div>
+          </div>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="scrollToSection('contact')">
+              바로 견적 문의하기
+            </button>
+            <button class="btn-ghost" onclick="scrollToSection('equipment')">
+              보유 설비 보기
+            </button>
+          </div>
+          <div class="hero-meta">
+            <div><strong>20년 이상</strong> 금속 가공 노하우</div>
+            <div><strong>자동차 · 전기 · 플랜트</strong> 협력사 납품</div>
+          </div>
+        </div>
+        <!--
+<div class="hero-visual">
+  <div class="hero-card">
+    <div class="hero-card-header">
+      <div>
+        <div class="hero-card-title">공장 외부 & 내부</div>
+        <div class="hero-card-sub">실제 작업 환경 사진</div>
+      </div>
+      <div class="hero-chip">
+        <span></span>현장 사진
+      </div>
+    </div>
+
+    <div class="hero-machines">
+      <div class="machine-box" style="padding:0; overflow:hidden;">
+        <img 
+          src="images/factory-outside.png" 
+          alt="공장 외부 사진" 
+          style="width:100%; height:100%; object-fit:cover; border-radius:12px;"
+        />
+      </div>
+      <div class="machine-box" style="padding:0; overflow:hidden;">
+        <img 
+          src="images/factory-inside.png" 
+          alt="공장 내부 사진" 
+          style="width:100%; height:100%; object-fit:cover; border-radius:12px;"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-floating"></div>
+</div>
+-->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">ABOUT FACTORY</div>
+          <h2 class="section-title">㈜정민산업의 목표</h2>
+          <p class="section-sub">
+            ㈜정민산업은 고객의 생산성과 안전을 높이는
+            <strong>산업 현장의 든든한 제작 파트너</strong>가 되는 것을 목표로 합니다.<br>
+            <strong>정확한 품질, 책임 있는 제작, 성실한 대응</strong>을 바탕으로
+            더 나은 제품과 서비스를 제공하겠습니다.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              ㈜정민산업은 <strong>30년 이상 원터치 행가 제작 경력</strong>을 기반으로,
+              분전함, 프레스·방전기 가공 부품 등 다양한 산업용 금속 제품을 전문 제작하는 기업입니다.
+              <strong>다양한 설비와 숙련된 기술력을 기반</strong>으로 맞춤 제작, 소량 생산,
+              단기 납기 대응까지 폭넓은 생산 체계를 갖추고 있습니다.
+            </p>
+            <p>
+              현장의 조건과 사용 환경을 고려한 실용적인 설계와 안정성을 최우선으로 하며,
+              도면 기반 제작은 물론 샘플 또는 간단한 스케치만으로도
+              제작 가능 여부를 검토하여 최적의 솔루션을 제공합니다.
+            </p>
+          </div>
+
+          <!-- 제공 가치 -->
+          <div class="about-card">
+            <h3>㈜정민산업이 제공하는 가치</h3>
+            <ul class="about-list">
+              <li><strong>현장 맞춤형 설계</strong> — 실제 조건을 반영한 최적의 제작</li>
+              <li><strong>정밀 금속 가공 능력</strong> — 프레스, 절곡, 용접, EDM 등 다양한 공정 보유</li>
+              <li><strong>소량·다품종 생산 대응</strong> — 필요 수량에 맞춘 유연한 생산 체계</li>
+              <li><strong>신뢰 기반의 협력</strong> — 안정적인 품질과 납기 준수</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Equipment -->
+    <section id="equipment" class="equipment">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">EQUIPMENT</div>
+          <h2 class="section-title">생산 설비 현황</h2>
+          <p class="section-sub">
+            프레스 및 방전기 중심의 설비 구성으로, 정밀 금속 가공부터 용접·조립까지
+            공정 일관 생산이 가능합니다.
+          </p>
+        </div>
+
+        <div class="equipment-grid">
+          <div class="equip-card">
+            <div class="equip-tag">PRESS</div>
+            <div class="equip-name">프레스 80~200톤 라인</div>
+            <div class="equip-meta">행거, 브라켓, 판금 부품 양산</div>
+            <div class="equip-spec">
+              - 톤수 : 80톤 / 110톤 / 160톤 / 200톤<br />
+              - 용도 : 절단, 성형, 펀칭, 벤딩<br />
+              - 특징 : 대량 반복 생산 / 자동 공급 대응
+            </div>
+          </div>
+
+          <div class="equip-card">
+            <div class="equip-tag">EDM</div>
+            <div class="equip-name">방전가공기</div>
+            <div class="equip-meta">금형 및 정밀 형상 가공</div>
+            <div class="equip-spec">
+              - 정밀 금형 제작 및 수정<br />
+              - 복잡 형상, 깊은 홈 가공 가능<br />
+              - 행거·분전함 부품용 금형 제작
+            </div>
+          </div>
+
+          <div class="equip-card">
+            <div class="equip-tag">FABRICATION</div>
+            <div class="equip-name">절단 · 용접 · 조립 설비</div>
+            <div class="equip-meta">분전함 및 구조물 제작</div>
+            <div class="equip-spec">
+              - 절단기, 용접기, 그라인더 등 보유<br />
+              - 박스형 구조물, 프레임 제작<br />
+              - 도장·표면처리 협력사 연계 가능
+            </div>
+          </div>
+
+          <div class="equip-card">
+            <div class="equip-tag">INSPECTION</div>
+            <div class="equip-name">치수 측정 및 검사</div>
+            <div class="equip-meta">품질 관리 시스템</div>
+            <div class="equip-spec">
+              - 기본 측정 공구 및 게이지 보유<br />
+              - 도면 기준 치수 검사<br />
+              - 출하 전 외관·치수 검수 진행
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">PRODUCTS</div>
+          <h2 class="section-title">주요 제품군</h2>
+          <p class="section-sub">
+            정민산업은 원터치 행가를 비롯해 분전함, 금속 가공품 등
+            산업 현장에서 바로 사용할 수 있는 기성 제품을 제공합니다.
+          </p>
+        </div>
+
+        <div class="product-grid">
+
+          <!-- 제품 1: 행거 -->
+          <a href="product-hanger.html" class="product-card-link">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/jmco-hanger.png" alt="원터치 행가 제품 이미지" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">원터치 행가 / 파이프라인 서포트</div>
+                <div class="product-meta">특허 보유 · 원터치 · 배관 지지대</div>
+                <p>
+                  정민산업의 원터치 행가는 30년 제조 기술을 기반으로 개발된
+                  특허 제품으로, 배관 설치 작업의 효율성과 안전성을 높여줍니다.
+                  다양한 규격의 배관 지지 작업에 바로 적용 가능한 기성 제품입니다.
+                </p>
+                <div class="product-tags">
+                  <span class="product-tag">특허 제품</span>
+                  <span class="product-tag">배관 지지대</span>
+                  <span class="product-tag">원터치 행가</span>
+                </div>
+                <div class="product-badge">
+                  <span class="badge-item">특허 제10-XXXXXXX호</span>
+                </div>
+              </div>
+
+            </div>
+          </a>
+
+          <!-- 제품 2: 분전함 -->
+          <a href="product-panel.html" class="product-card-link">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/jmco-panel.png" alt="분전함 / 전기 박스 제작 사례" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">분전함 · 전기 박스</div>
+                <div class="product-meta">공장 · 빌딩 · 설비용 기성 제품</div>
+                <p>
+                  산업 현장에서 널리 사용되는 표준 규격의 분전함 및 전기 박스를
+                  생산하고 있습니다. 내구성과 실용성을 고려한 구조로 제작되어
+                  다양한 환경에서 안정적으로 사용할 수 있습니다.
+                </p>
+                <div class="product-tags">
+                  <span class="product-tag">분전함</span>
+                  <span class="product-tag">제어반</span>
+                  <span class="product-tag">판금</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- 제품 3: 프레스 / 방전기 가공 -->
+          <a href="product-bracket.html" class="product-card-link">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/jmco-bracket.png" alt="프레스 및 방전기 가공 부품" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">프레스 · 방전기 가공 부품</div>
+                <div class="product-meta">브라켓 · 플레이트 · 금형 부품</div>
+                <p>
+                  프레스 및 방전기 공정을 통해 생산되는 브라켓, 플레이트 등
+                  산업용 금속 부품을 기성 규격으로 공급합니다.
+                  반복 생산에 최적화된 공정으로 안정적인 품질을 제공합니다.
+                </p>
+                <div class="product-tags">
+                  <span class="product-tag">프레스</span>
+                  <span class="product-tag">EDM</span>
+                  <span class="product-tag">정밀 가공</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">PROCESS</div>
+          <h2 class="section-title">생산 진행 절차</h2>
+          <p class="section-sub">
+            도면 또는 샘플을 기반으로 상담부터 납품까지, 명확한 절차에 따라
+            진행합니다.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-card">
+            <div class="process-title">1. 도면 / 샘플 상담</div>
+            <div class="process-text">
+              도면, 사진, 샘플 등을 공유해 주시면 제작 가능 여부와 예상 납기,
+              수량, 단가 범위를 안내드립니다.
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-title">2. 견적 및 제작 조건 확정</div>
+            <div class="process-text">
+              재질, 두께, 표면처리, 수량, 포장 방식 등 세부 조건을 협의 후
+              견적서를 발행합니다.
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-title">3. 시제품 / 초도 생산</div>
+            <div class="process-text">
+              필요 시 시제품 또는 초도 물량을 먼저 생산하여, 현장 적용 후
+              수정 사항을 반영합니다.
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-title">4. 양산 및 납품</div>
+            <div class="process-text">
+              확정된 조건에 따라 양산을 진행하고, 납기 일정에 맞춰 포장·출하를
+              진행합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>견적 및 기술 상담 문의</h2>
+          <p>
+            도면, 사진, 샘플을 함께 보내주시면 보다 정확한 상담이 가능합니다.<br>간단한 스케치만 있어도 검토해드리며, 제작 가능 여부를 빠르게 안내드립니다.
+          </p>
+          <div class="contact-info">
+            <div><span>회사명</span>㈜정민산업</div>
+            <div><span>대표자</span>최규섭</div>
+            <div><span>주소</span>경기도 시흥시 신현로 240-23 (우 14961)<button class="map-toggle-btn" onclick="toggleMap()">오시는
+                길</button></div>
+            <!-- 지도 영역 (초기에는 숨김) -->
+            <div id="map-section" class="map-section hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.3247211932157!2d126.7639084764003!3d37.40579903332801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7adb8e4aa3ef%3A0x9801eb65fa907700!2z6rK96riw64-EIOyLnO2dpeyLnCDsi6DtmITroZwgMjQwLTIz!5e0!3m2!1sko!2skr!4v1775989541135!5m2!1sko!2skr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div><span>휴대전화</span>010-5581-9272</div>
+            <div><span>대표전화</span>031-311-1422</div>
+            <div><span>이메일</span>hee_mang@nate.com</div>
+          </div>
+          <div class="contact-badges">
+            <div class="contact-badge">소량·단기 납기 문의 가능</div>
+            <div class="contact-badge">장기 협력사 계약 환영</div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <a href="mailto:hee_mang@nate.com?subject=홈페이지 문의&body=안녕하세요.%0D%0A홈페이지에서 문의드립니다.%0D%0A%0D%0A이름:%0D%0A연락처:%0D%0A문의 내용:%0D%0A"
+            class="btn-primary">
+            견적·기술 상담 메일 보내기
+          </a>
+          <div class="logo-full-wrap">
+            <img src="images/fmco_full.png" alt="정민산업 로고" class="logo-full-img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 <strong>(주) 정민산업</strong>. All rights reserved.</span>
+      <span>대표: 최 규 섭 · TEL: 031-311-1422 · H.P: 010-5581-9272</span>
+      <span>경기도 시흥시 신현로 240-23 (우 14961)</span>
+    </div>
+  </footer>
+
+
+  <script>
+    // 부드러운 스크롤
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      window.scrollTo({
+        top: el.offsetTop - 80,
+        behavior: "smooth",
+      });
+    }
+
+    // 모바일 네비게이션
+    const navToggle = document.getElementById("navToggle");
+    const navMobile = document.getElementById("navMobile");
+
+    if (navToggle) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = navMobile.style.display === "flex";
+        navMobile.style.display = isOpen ? "none" : "flex";
+      });
+    }
+
+    function closeMobileNav() {
+      if (navMobile) navMobile.style.display = "none";
+    }
+
+    // 폼 제출 (실제 전송 대신 알림)
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert("문의가 작성되었습니다. 실제 전송 기능은 서버 연동 후 구현해 주세요.");
+      e.target.reset();
+    }
+
+    function toggleMap() {
+      const map = document.getElementById("map-section");
+      map.classList.toggle("hidden");
+    }
+
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".container");
+      if (!header) return; // header 없으면 실행 안 함
+      
+      if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
