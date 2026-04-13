@@ -1,0 +1,163 @@
+/* ===========================
+   Product Detail Page Common CSS
+   =========================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* 제목 */
+.detail-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1E3A8A;
+  margin-bottom: 8px;
+}
+
+.detail-sub {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+/* 히어로 이미지 */
+.detail-hero img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 40px;
+}
+
+/* 본문 */
+.detail-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.detail-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.detail-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-content ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* 특허 박스 */
+.patent-box {
+  background: #eef2ff;
+  border-left: 4px solid #1E3A8A;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #1E3A8A;
+  font-weight: 600;
+}
+
+/* 스펙 테이블 */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.spec-table th {
+  background: #1E3A8A;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.spec-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px;
+  color: #374151;
+}
+
+.spec-table tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+/* 다운로드 버튼 */
+.download-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 22px;
+  background: #1E3A8A;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: #162d66;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .detail-title {
+    font-size: 26px;
+  }
+  .detail-hero img {
+    max-height: 260px;
+  }
+}
+
+/* ===========================
+   Breadcrumb
+   =========================== */
+.breadcrumb {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb a {
+  color: #1E3A8A;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .current {
+  color: #374151;
+  font-weight: 600;
+}
+
